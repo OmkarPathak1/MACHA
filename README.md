@@ -21,7 +21,8 @@ Before running MACHA, ensure that you have Python installed on your system.
 MACHA uses the PySimpleGUI library for its graphical user interface. You can install it using pip:
 
 ```shell
-pip install PySimpleGUI```
+pip install PySimpleGUI
+```
 
 ## Installation
 
