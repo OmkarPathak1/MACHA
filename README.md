@@ -90,7 +90,7 @@ Follow the instructions below to install and run MACHA on your respective platfo
 
 Upon launching the application, you'll be presented with a user-friendly interface:
 
-![MACHA Screenshot](images/macha_screenshot.png)
+![MACHA Screenshot](img/macha_screenshot.png)
 
 Follow these steps to use the application:
 
@@ -112,9 +112,9 @@ Follow these steps to use the application:
 
 ## Screenshots
 
-![Change Logs](images/change_logs.png)
+![Change Logs](img/change_logs.png)
 
-![Error Logs](images/error_logs.png)
+![Error Logs](img/error_logs.png)
 
 ## License
 
