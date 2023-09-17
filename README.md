@@ -12,6 +12,17 @@ MACHA (MAC Address Changer) is a Python-based cross-platform application for cha
 - Automatically change the application's theme for an enhanced visual experience.
 - Works on Linux, Windows, and macOS.
 
+### Prerequisites
+
+Before running MACHA, ensure that you have Python installed on your system.
+
+### PySimpleGUI
+
+MACHA uses the PySimpleGUI library for its graphical user interface. You can install it using pip:
+
+```shell
+pip install PySimpleGUI
+
 ## Installation
 
 Follow the instructions below to install and run MACHA on your respective platform.
