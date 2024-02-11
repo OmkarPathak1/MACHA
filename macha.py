@@ -54,7 +54,7 @@ def generate_random_mac():
 
 # Available themes
 themes = [
-    'DarkGrey5'
+    'LightGrey2'
 ]
 
 # Set initial theme
@@ -97,32 +97,21 @@ def show_help_window():
 
 # Create the GUI layout
 layout = [
-    [sg.Text(
-        '''
-        ___  ___           _           
-        |  \/  |          | |          
-        | .  . | __ _  ___| |__   __ _ 
-        | |\/| |/ _` |/ __| '_ \ / _` |
-        | |  | | (_| | (__| | | | (_| |
-        \_|  |_/\__,_|\___|_| |_|\__,_|
-
-        ~by inxdict
-        ''',
-        size=(50, 8), justification='center')],
+    [sg.Image(filename='./img/macha.png', size=(350, 100))],  # Add an image
     [sg.Text("By inxdict", font=("Helvetica", 10))],
     [sg.Text("Current MAC Address:", size=(20, 1)), sg.Text(current_mac, size=(17, 1), key="-CURRENT_MAC-")],
     [sg.Text("New MAC Address:", size=(20, 1)), sg.InputText("", size=(17, 1), key="-NEW_MAC-")],
-    [sg.Button("Change MAC Address")],
-    [sg.Button("Generate Random MAC")],
-    [sg.Button("Like It")],  # Add "Like It" button next to "Generate MAC" button
+    [sg.Button("Change MAC Address", size=(20, 1))],
+    [sg.Button("Generate Random MAC", size=(20, 1))],
+    [sg.Button("Like It", size=(20, 1))],  # Add "Like It" button next to "Generate MAC" button
     [sg.Text("", size=(40, 1), key="-STATUS-")],
     [sg.Multiline("", size=(40, 4), key="-ERROR-", text_color="red")],
-    [sg.Button("View Logs"), sg.Button("Clear Logs"), sg.Button("Help")],  # Add a "Help" button
+    [sg.Button("View Logs", size=(15, 1)), sg.Button("Clear Logs", size=(15, 1)), sg.Button("Help", size=(15, 1))],  # Add a "Help" button
 
     # Section for storing liked MAC addresses
     [sg.Text("Liked MAC Addresses:", size=(20, 1))],
     [sg.Listbox(values=liked_mac_addresses, size=(30, 6), key="-LIKED_MACS-", enable_events=True)],
-    [sg.Button("Use"), sg.Button("Remove")],  # Add "Use" and "Remove" buttons
+    [sg.Button("Use", size=(15, 1)), sg.Button("Remove", size=(15, 1))],  # Add "Use" and "Remove" buttons
 ]
 
 # Create the GUI window
